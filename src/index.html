@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+</head>
+
+<body>
+
+    <section class="bg-gradient-to-tr from-slate-500 w-full">
+        <div class="ourGoalSection max-w-[1440px] w-full flex flex-col items-center justify-center mx-auto p-10">
+            <!-- Navigation -->
+            <div class="headingNavber pb-10">
+                <ul class="flex items-center justify-around text-2xl w-[1075px] font-bold">
+                    <li>
+                        <a href="#" class="nav-link" data-content="goal">Our Goal</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" data-content="vision">Our Vision</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" data-content="history">History</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" data-content="culture">Culture</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" data-content="values">Our Values</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Dynamic Content Section -->
+            <div class="towSide flex flex-wrap items-center justify-around max-w-[1000px] w-full gap-6">
+                <div class="leftText flex flex-col items-start gap-4 w-[333px]">
+                    <h3 id="content-title" class="text-3xl font-bold">Our Goal</h3>
+                    <p id="content-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere soluta quidem quae ut quasi
+                        nostrum tempora non minus quaerat ex?
+                    </p>
+                </div>
+                <div class="rightText w-[460px]">
+                    <img id="content-image" src="/src/accet/image 7.png" alt="Our Goal Image" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-[1440px] mx-auto px-4 py-10">
+        <div class="mainSection flex flex-col items-center">
+            <!-- Author & Date -->
+            <div class="insName space-y-3 text-center">
+                <div class="dateP flex items-center justify-center gap-2 text-gray-600">
+                    <p class="text-emerald-600 font-semibold">Eftakhar Noor -</p>
+                    <span>January 20, 2025</span>
+                </div>
+                <!-- Blog Title -->
+                <div class="hdeadTitle w-full max-w-[600px] mx-auto text-center font-bold text-3xl leading-tight">
+                    <h3>How to Use the <strong>Tag</strong> in HTML for Better Readability and SEO</h3>
+                </div>
+                <!-- Category -->
+                <div class="catgoryName">
+                    <div class="flex items-center justify-center bg-slate-400 w-52 h-11 rounded-md mx-auto gap-2 text-white font-semibold">
+                        <img src="/src/accet/login-svgrepo-com.svg" alt="" width="20px">
+                        <a href="#">Web & Software</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Blog Thumbnail -->
+            <div class="thamnal flex items-center justify-center mx-auto py-6">
+                <img class="rounded-lg w-full max-w-[800px] object-cover" src="/src/accet/Firefly-web-development.png" alt="Blog Thumbnail">
+            </div>
+    
+            <!-- Blog Content -->
+            <div class="allTextSection flex flex-col md:flex-row gap-8">
+                <!-- Left: Blog Text Content -->
+                <div class="textLeft w-full md:w-3/4 space-y-6">
+                    <p class="text-gray-700 leading-relaxed">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ipsa consectetur iure laborum. Aspernatur ratione blanditiis impedit ex nam. Sed maiores sit minus, at ipsam adipisci ratione illo cupiditate quos deleniti error est perspiciatis. Minus pariatur tenetur iste possimus eveniet?
+                    </p>
+    
+                    <h3 class="text-2xl font-bold text-gray-900">What is the <strong>Tag?</strong></h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda placeat nam itaque aperiam tenetur?
+                    </p>
+    
+                    <p class="text-gray-700 leading-relaxed">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ipsa consectetur iure laborum. Aspernatur ratione blanditiis impedit ex nam. Sed maiores sit minus, at ipsam adipisci ratione illo cupiditate quos deleniti error est perspiciatis. Minus pariatur tenetur iste possimus eveniet?
+                    </p>
+    
+                    <h3 class="text-2xl font-bold text-gray-900">Why Use the <strong>Tag?</strong></h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda placeat nam itaque aperiam tenetur?
+                    </p>
+                </div>
+    
+                <!-- Right: Sidebar Section -->
+                <div class="textRight w-full md:w-1/4 bg-gray-100 p-5 rounded-lg">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-4">Related Posts</h4>
+                    <ul class="space-y-3">
+                        <li class="border-b pb-2"><a href="#" class="text-blue-600 hover:underline">Best Practices for HTML Tags</a></li>
+                        <li class="border-b pb-2"><a href="#" class="text-blue-600 hover:underline">Why SEO Matters for Developers</a></li>
+                        <li class="border-b pb-2"><a href="#" class="text-blue-600 hover:underline">Improving Readability in Web Design</a></li>
+                        <li><a href="#" class="text-blue-600 hover:underline">HTML5 Updates You Should Know</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contentData = {
+                goal: {
+                    title: "Our Goal",
+                    text: "Our goal is to achieve excellence through innovation, teamwork, and continuous improvement.",
+                    image: "/src/accet/image 7.png"
+                },
+                vision: {
+                    title: "Our Vision",
+                    text: "We envision a future where technology and human ingenuity create a sustainable world.",
+                    image: "/src/accet/image 8.png"
+                },
+                history: {
+                    title: "History",
+                    text: "Founded in 1990, our company has been at the forefront of innovation for over three decades.",
+                    image: "/src/accet/image 9.png"
+                },
+                culture: {
+                    title: "Culture",
+                    text: "We foster a culture of inclusivity, collaboration, and creativity, empowering our team to excel.",
+                    image: "/src/accet/image 10.png"
+                },
+                values: {
+                    title: "Our Values",
+                    text: "Integrity, commitment, and excellence drive us to deliver the best results for our customers.",
+                    image: "/src/accet/image 11.png"
+                }
+            };
+
+            const navLinks = document.querySelectorAll(".nav-link");
+            const contentTitle = document.getElementById("content-title");
+            const contentText = document.getElementById("content-text");
+            const contentImage = document.getElementById("content-image");
+
+            // প্রথম লিংকটি Active করতে
+            navLinks[0].classList.add("active");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault(); // Prevent page reload
+                    const contentKey = this.getAttribute("data-content");
+
+                    // Remove "active" class from all links
+                    navLinks.forEach(nav => nav.classList.remove("active"));
+
+                    // Add "active" class to the clicked link
+                    this.classList.add("active");
+
+                    // Change the content
+                    if (contentData[contentKey]) {
+                        contentTitle.textContent = contentData[contentKey].title;
+                        contentText.textContent = contentData[contentKey].text;
+                        contentImage.src = contentData[contentKey].image;
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /* Tailwind Custom Styles */
+        .nav-link {
+            @apply relative text-white text-2xl font-bold transition duration-300;
+        }
+
+        /* Active State */
+        .nav-link.active {
+            @apply text-blue-300 after:block after:h-[5px] after:w-full after:bg-gradient-to-r after:from-blue-400 after:to-purple-500;
+        }
+
+        /* Hover Effect */
+        .nav-link:hover {
+            @apply text-blue-200 after:w-full;
+        }
+    </style>
+
+
+</body>
+
+</html>

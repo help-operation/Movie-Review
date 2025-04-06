@@ -1,0 +1,15 @@
+.container{
+    width: 500px;
+    height: auto;
+    background-color: aliceblue;
+    padding: 50px 20px;
+    text-align: center;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.247);
+}
+li{
+    list-style: decimal-leading-zero;
+    padding: 10px 0px;
+    text-align: left;
+}

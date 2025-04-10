@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-slate-300">
+
+    <div class="calculator w-[300px] bg-slate-900 p-5 rounded-lg">
+
+        <div id="display" class="  bg-white text-black px-3 py-2 rounded-sm">
+            0
+        </div>
+
+        <div class="grid grid-cols-4 gap-12 text-white py-10 font-bold text-[30px]">
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button onclick="press('/')">/</button>
+
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('*')">*</button>
+
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="press('-')">-</button>
+
+            <button onclick="press('0')">0</button>
+            <button onclick="press('.')">.</button>
+            <button onclick="calculate()" class="equal">=</button>
+            <button onclick="press('+')">+</button>
+        </div>
+    </div>
+
+    <script>
+        let input = '';
+        const display = document.getElementById('display');
+
+        function press (val) {
+            input += val;
+            display.textContent = input;
+        }
+
+        function calculate ( ) {
+          try {
+            input = eval (input).toString();
+            display.textContent =input;
+          }  catch (err) {
+            display.textContent = 'Erro';
+            input = '';
+          }
+        }
+
+        function clearDisplay () {
+            input = '';
+            display.textContent ='0'
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const key = e.key;
+            if(!isNaN(key) || ['+','-','*','/','.'].includes(key)) {
+                press(key);
+            } else if (key === 'Enter') {
+                e.preventDefault();
+                calculate();
+            } else if(key === 'backspace'){
+                input = input.slice(0, -1);
+                display.textContent = input || "0";
+            } else if(key === 'Escape'){
+                clearDisplay();
+            }
+        });
+    </script>
+</body>
+</html>

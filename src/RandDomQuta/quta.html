@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quote</title>
+  <title>Random Quote Generator</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="quta.js" defer></script>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-  <div class="qutaMain bg-black w-[500px] text-white text-center py-6 px-4 rounded-md shadow-md">
-    <h1 id="qutaTitle" class="text-2xl font-bold mb-2">Quote Title</h1>
+  <div class="quoteMain bg-black w-[500px] text-white text-center py-6 px-4 rounded-md shadow-md">
+    <h1 id="quoteTitles" class="text-2xl font-bold mb-2">Quote Title</h1>
     <p id="authorName" class="mb-4 text-gray-300">Author Name</p>
-    <button id="addButton" class="w-[120px] h-[40px] bg-gray-600 text-white rounded-sm hover:bg-gray-700 transition">
+    <button onclick="qutaArrange()"  id="addButton" class="w-[120px] h-[40px] bg-gray-600 text-white rounded-sm hover:bg-gray-700 transition">
       See Next
     </button>
   </div>
